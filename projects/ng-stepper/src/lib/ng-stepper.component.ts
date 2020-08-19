@@ -22,12 +22,4 @@ export class NgStepperComponent extends CdkStepper implements OnInit {
   ngOnInit(): void {
   }
 
-  @HostListener('document:keydown', ['$event'])
-  handleKeyboardEvent(event: KeyboardEvent): void {
-    if (event.key === 'ArrowLeft') {
-      this.previous();
-    } else if (event.key === 'ArrowRight') {
-      this.next();
-    }
-  }
 }
